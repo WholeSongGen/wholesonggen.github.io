@@ -1,0 +1,112 @@
+@use "sass:math";
+@use "sass:string";
+
+midi-player {
+    display: block;
+    width: inherit;
+    margin: 4px;
+    margin-bottom: 0;
+}
+
+midi-player::part(control-panel) {
+    /* background: #252a34; */
+    border: 2px solid #000;
+    border-radius: 10px 10px 0 0;
+}
+
+midi-player::part(play-button) {
+    color: #222;
+    border: 2px solid currentColor;
+    background-color: #ddd;
+    border-radius: 20px;
+    transition: all 0.2s;
+    content: 'hello';
+}
+
+midi-player::part(play-button):hover {
+    color: #000;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+midi-player::part(time) {
+    font-family: monospace;
+}
+
+/* Custom visualizer style */
+midi-visualizer .piano-roll-visualizer {
+    /* background: #252a34; */
+    border: 2px solid black;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    margin: 4px;
+    margin-top: 0;
+    overflow: auto;
+}
+
+midi-visualizer svg rect.note {
+    opacity: 0.6;
+    stroke-width: 2;
+}
+
+midi-visualizer svg rect.note[data-instrument="0"] {
+    fill: #e03c34;
+    /* stroke: #500; */
+}
+
+midi-visualizer svg rect.note[data-instrument="1"] {
+    /* fill: #444; */
+    fill: #1c71d8;
+    /* stroke: #500; */
+}
+
+$l: #aaa;
+$t: transparent;
+$i: #efefef;
+$A: #faf5eb;
+$B: #faedf7;
+$b: #ebeffa;
+$o: #efefef;
+
+/* @mixin phrase($phs...) { */
+/*     $cur: 0; */
+/*     @for $k from 0 to math.div(length($phs), 2) { */
+/*         $color: nth($phs, $k * 2 + 1); */
+/*         $len: nth($phs, $k * 2 + 2); */
+
+/*         @debug $color, $len; */
+/*         $background: linear-gradient(90deg, $color $cur*80px+1px ($cur+$len)*80px-1px, $l ($cur+$len)*80px-1px ($cur+$len)*80px+1px); */
+/*         $cur: $cur + $len; */
+/*     } */
+/* } */
+
+/* #fig2 midi-visualizer .piano-roll-visualizer svg{   */
+/*     @include phrase($A, 4, $B, 1); */
+/* } */
+
+midi-visualizer .piano-roll-visualizer svg {
+    background: linear-gradient(90deg, $l 1px, $t 1px 20px, #aaaaaa55 21px, $t 21px 40px, #aaaaaa55 41px, $t 41px 60px, #aaaaaa55 61px, $t 61px) left/80px repeat;
+}
+
+/* #inp midi-visualizer svg rect.note[data-instrument="1"] { */
+/*     fill: #1c71d8; */
+/*     /* stroke: #055; */ 
+/* } */
+
+midi-visualizer svg rect.note[data-is-drum="true"] {
+    fill: #888;
+    /* stroke: #888; */
+}
+
+midi-visualizer svg rect.note.active {
+    opacity: 0.9;
+    stroke: #000;
+}
+
+#fig2_melacc midi-visualizer .piano-roll-visualizer svg {
+    background: linear-gradient(90deg, $l 1px, $t 1px 20px, #aaaaaa55 21px, $t 21px 40px, #aaaaaa55 41px, $t 41px 60px, #aaaaaa55 61px, $t 61px) left/80px repeat, linear-gradient(90deg, $i 1px 319px, $l 319px 321px, $A 321px 639px, $l 639px 641px, $A 641px 959px, $l 959px 961px, $B 961px 1599px, $l 1599px 1601px, $b 1601px 1919px, $l 1919px 1921px, $A 1921px 2239px, $l 2239px 2241px, $A 2241px 2879px, $l 2879px 2881px, $o 2881px 3199px, $l 3199px 3201px);
+}
+
+#fig2_cp midi-visualizer .piano-roll-visualizer svg {
+    background: linear-gradient(90deg, $l 1px, $t 1px 20px, #aaaaaa55 21px, $t 21px 40px, #aaaaaa55 41px, $t 41px 60px, #aaaaaa55 61px, $t 61px) left/80px repeat, linear-gradient(90deg, $i 1px 319px, $l 319px 321px, $A 321px 639px, $l 639px 641px, $A 641px 959px, $l 959px 961px, $B 961px 1599px, $l 1599px 1601px, $b 1601px 1919px, $l 1919px 1921px, $A 1921px 2239px, $l 2239px 2241px, $A 2241px 2879px, $l 2879px 2881px, $o 2881px 3199px, $l 3199px 3201px);
+}

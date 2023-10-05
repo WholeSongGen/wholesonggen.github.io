@@ -1,5 +1,6 @@
 import os
 
+
 def phrase_config_from_string(phrase_annotation):
     index = 0
     phrase_configuration = []
@@ -12,6 +13,7 @@ def phrase_config_from_string(phrase_annotation):
             index += 1
         phrase_configuration.append((label, int(n_bars)))
     return phrase_configuration
+
 
 def colorize(figname, ph_anno):
     phs = phrase_config_from_string(ph_anno)
@@ -27,7 +29,6 @@ def colorize(figname, ph_anno):
 
 
 if __name__ == "__main__":
-    fig2_mel_acc = colorize("fig2_melacc", "i4A4A4B8b4A4A8o4")
-    fig2_cp = colorize("fig2_cp", "i4A4A4B8b4A4A8o4")
+    fig2 = colorize("fig2", "i4A4A4B8b4A4A8o4")
     with open("./styles.scss", "a") as f:
-        f.write(fig2_mel_acc + fig2_cp)
+        f.write(fig2)

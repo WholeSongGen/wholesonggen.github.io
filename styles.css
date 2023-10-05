@@ -74,10 +74,6 @@ midi-visualizer .piano-roll-visualizer svg {
   background: linear-gradient(90deg, #aaa 1px, transparent 1px 20px, rgba(170, 170, 170, 0.3333333333) 21px, transparent 21px 40px, rgba(170, 170, 170, 0.3333333333) 41px, transparent 41px 60px, rgba(170, 170, 170, 0.3333333333) 61px, transparent 61px) left/80px repeat;
 }
 
-/* #inp midi-visualizer svg rect.note[data-instrument="1"] { */
-/*     fill: #1c71d8; */
-/*     /* stroke: #055; */
-/* } */
 midi-visualizer svg rect.note[data-is-drum=true] {
   fill: #888;
   /* stroke: #888; */
@@ -88,11 +84,7 @@ midi-visualizer svg rect.note.active {
   stroke: #000;
 }
 
-#fig2_melacc midi-visualizer .piano-roll-visualizer svg {
-  background: linear-gradient(90deg, #aaa 1px, transparent 1px 20px, rgba(170, 170, 170, 0.3333333333) 21px, transparent 21px 40px, rgba(170, 170, 170, 0.3333333333) 41px, transparent 41px 60px, rgba(170, 170, 170, 0.3333333333) 61px, transparent 61px) left/80px repeat, linear-gradient(90deg, #efefef 1px 319px, #aaa 319px 321px, #faf5eb 321px 639px, #aaa 639px 641px, #faf5eb 641px 959px, #aaa 959px 961px, #faedf7 961px 1599px, #aaa 1599px 1601px, #ebeffa 1601px 1919px, #aaa 1919px 1921px, #faf5eb 1921px 2239px, #aaa 2239px 2241px, #faf5eb 2241px 2879px, #aaa 2879px 2881px, #efefef 2881px 3199px, #aaa 3199px 3201px);
-}
-
-#fig2_cp midi-visualizer .piano-roll-visualizer svg {
+#fig2 midi-visualizer .piano-roll-visualizer svg {
   background: linear-gradient(90deg, #aaa 1px, transparent 1px 20px, rgba(170, 170, 170, 0.3333333333) 21px, transparent 21px 40px, rgba(170, 170, 170, 0.3333333333) 41px, transparent 41px 60px, rgba(170, 170, 170, 0.3333333333) 61px, transparent 61px) left/80px repeat, linear-gradient(90deg, #efefef 1px 319px, #aaa 319px 321px, #faf5eb 321px 639px, #aaa 639px 641px, #faf5eb 641px 959px, #aaa 959px 961px, #faedf7 961px 1599px, #aaa 1599px 1601px, #ebeffa 1601px 1919px, #aaa 1919px 1921px, #faf5eb 1921px 2239px, #aaa 2239px 2241px, #faf5eb 2241px 2879px, #aaa 2879px 2881px, #efefef 2881px 3199px, #aaa 3199px 3201px);
 }
 

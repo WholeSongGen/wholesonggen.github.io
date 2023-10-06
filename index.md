@@ -42,6 +42,7 @@ The given phrase configuration is **i**4**A**4**A**4**B**8**b**4**A**4**B**8**o*
 <section id="type1">
     <midi-player src="/media/fig2_melacc.mid" sound-font visualizer="#Vis-fig2-melacc"> </midi-player>
     <midi-visualizer src="/media/fig2_melacc.mid" type="piano-roll" id="Vis-fig2-melacc"> </midi-visualizer>
+    <br>
 </section>
 - Generated Counterpoint(Melody reduction and chord)
 <section id="type1">
@@ -61,6 +62,7 @@ The given phrase configuration is **i**4**A**4**A**4**B**8**b**4**A**4**B**8**o*
     <midi-player src="/media/fig5_e.mid" sound-font visualizer="#Vis-fig5-0"> </midi-player>
     <midi-player src="/media/fig5_f.mid" sound-font visualizer="#Vis-fig5-0"> </midi-player>
     <midi-visualizer type="piano-roll" id="Vis-fig5-0"> </midi-visualizer>
+    <br>
 </section>
 
 - (g)-(h): These samples are further conditioned on external control of chord progression latent representation. The representation fed to the model is the latent code of a sequence of Eb major chords.
@@ -77,6 +79,7 @@ All the following lead sheet is based on the higher-level language Form and the 
 <section id="fig6">
     <midi-player src="/media/fig6_a.mid" sound-font visualizer="#Vis-fig6-a"> </midi-player>
     <midi-visualizer src="/media/fig6_a.mid" type="piano-roll" id="Vis-fig6-a"> </midi-visualizer>
+    <br>
 </section>
 
 - (b)-(g): These samples are only conditioned on the content of the higher-level language Form and Counterpoint.
@@ -88,6 +91,7 @@ All the following lead sheet is based on the higher-level language Form and the 
     <midi-player src="/media/fig6_f.mid" sound-font visualizer="#Vis-fig6-0"> </midi-player>
     <midi-player src="/media/fig6_g.mid" sound-font visualizer="#Vis-fig6-0"> </midi-player>
     <midi-visualizer type="piano-roll" id="Vis-fig6-0"> </midi-visualizer>
+    <br>
 </section>
 
 - (h)-(i): These samples are further conditioned on external control of rhythm latent representation. The representation fed to the model is the latent code of a sequence of all16-th notes.
@@ -100,10 +104,11 @@ All the following lead sheet is based on the higher-level language Form and the 
 
 ### Figure 7: Examples of generated Accompaniment of "A8" phrases in Eb major.
 
-All the following lead sheet is based on the higher-level language Form, Counterpoint (Figure6(a)) and the following Lead Sheet (Figure 7(a)):
+All the following lead sheet is based on the higher-level language Form, Counterpoint (Figure 6(a)) and the following Lead Sheet (Figure 7(a)):
 <section>
     <midi-player src="/media/fig7_a.mid" sound-font visualizer="#Vis-fig7-a"> </midi-player>
     <midi-visualizer src="/media/fig7_a.mid" type="piano-roll" id="Vis-fig7-a"> </midi-visualizer>
+    <br>
 </section>
 
 - (b)-(d): These samples are only conditioned on the content of the higher-level language Form and Counterpoint.
@@ -112,6 +117,7 @@ All the following lead sheet is based on the higher-level language Form, Counter
     <midi-player src="/media/fig7_c.mid" sound-font visualizer="#Vis-fig7-0"> </midi-player>
     <midi-player src="/media/fig7_d.mid" sound-font visualizer="#Vis-fig7-0"> </midi-player>
     <midi-visualizer type="piano-roll" id="Vis-fig7-0"> </midi-visualizer>
+    <br>
 </section>
 
 - (e): This sample is further conditioned on external control of texture latent representation. The representation fed to the model is the latent code of a sequence of Alberti bass texture, where left hand plays Eb quarter note and the right hand plays Alberti pattern in Eb chord.
@@ -150,6 +156,7 @@ Here are we show more generation examples:
     <midi-player src="/media/more1_0.mid" sound-font visualizer="#Vis-more1"> </midi-player>
     <midi-player src="/media/more1_1.mid" sound-font visualizer="#Vis-more1"> </midi-player>
     <midi-visualizer type="piano-roll" id="Vis-more1"> </midi-visualizer>
+    <br>
 </section>
 
 - **A**8**B**8**A**8**B**8**B**8
@@ -157,6 +164,7 @@ Here are we show more generation examples:
     <midi-player src="/media/more2_0.mid" sound-font visualizer="#Vis-more2"> </midi-player>
     <midi-player src="/media/more2_1.mid" sound-font visualizer="#Vis-more2"> </midi-player>
     <midi-visualizer type="piano-roll" id="Vis-more2"> </midi-visualizer>
+    <br>
 </section>
 
 - **i**4**A**4**B**4**b**8**A**4**B**4**o**4

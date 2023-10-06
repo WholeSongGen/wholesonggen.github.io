@@ -14,7 +14,7 @@ In the following, we first show the audible samples corresponding to the sheet m
 
 ## Audible Samples of the Sheet Music in the Submission
 
-### Figure 2: An example of whole song generation of 40 measures.
+### **Figure 2:** An example of whole song generation of 40 measures.
 
  <!-- Color Legend -->
 <div class="legend">
@@ -51,7 +51,7 @@ The given phrase configuration is **i**4**A**4**A**4**B**8**b**4**A**4**B**8**o*
 </section>
 <br>
 
-### Figure 5: Examples of generated Counterpoint of "A8" phrases in Eb major.
+### **Figure 5:** Examples of generated Counterpoint of "A8" phrases in Eb major.
 
 - (a)-(f): These samples are only conditioned on the content of the higher-level language Form.
 <section id="fig5">
@@ -73,9 +73,9 @@ The given phrase configuration is **i**4**A**4**A**4**B**8**b**4**A**4**B**8**o*
 </section>
 <br>
 
-### Figure 6: Examples of generated Lead Sheet of "A8" phrases in Eb major.
+### **Figure 6:** Examples of generated Lead Sheet of "A8" phrases in Eb major.
 
-All the following lead sheet is based on the higher-level language Form and the following Counterpoint (Figure 6(a)):
+All the following lead sheet is based on the higher-level language Form and the following Counterpoint (**Figure 6(a)**):
 <section id="fig6">
     <midi-player src="/media/fig6_a.mid" sound-font visualizer="#Vis-fig6-a"> </midi-player>
     <midi-visualizer src="/media/fig6_a.mid" type="piano-roll" id="Vis-fig6-a"> </midi-visualizer>
@@ -102,9 +102,9 @@ All the following lead sheet is based on the higher-level language Form and the 
 </section>
 <br>
 
-### Figure 7: Examples of generated Accompaniment of "A8" phrases in Eb major.
+### **Figure 7:** Examples of generated Accompaniment of "A8" phrases in Eb major.
 
-All the following lead sheet is based on the higher-level language Form, Counterpoint (Figure 6(a)) and the following Lead Sheet (Figure 7(a)):
+All the following lead sheet is based on the higher-level language Form, Counterpoint (**Figure 6(a)**) and the following Lead Sheet (**Figure 7(a)**):
 <section>
     <midi-player src="/media/fig7_a.mid" sound-font visualizer="#Vis-fig7-a"> </midi-player>
     <midi-visualizer src="/media/fig7_a.mid" type="piano-roll" id="Vis-fig7-a"> </midi-visualizer>

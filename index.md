@@ -173,11 +173,12 @@ Here are we show more whole-song generation examples:
     <midi-player src="/media/more3_1.mid" sound-font visualizer="#Vis-more3"> </midi-player>
     <midi-visualizer type="piano-roll" id="Vis-more3"> </midi-visualizer>
 </section>
+<br>
 
 
 
 <script
     src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.5.0"></script>
 
-<!-- Thanks <a href="https://cifkao.github.io/html-midi-player/">html-midi-player</a> for the excellent MIDI visualization. -->
+Thanks <a href="https://cifkao.github.io/html-midi-player/">html-midi-player</a> for the excellent MIDI visualization.
 

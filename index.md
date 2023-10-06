@@ -77,11 +77,37 @@ All the following lead sheet is based on the higher-level language Form and the 
 <br>
 
 ### Figure 7: Examples of generated Accompaniment of "A8" phrases in Eb major.
-(Note: please note (a) is in the beginning of the midi and is different from all others. Please break the long midi file into 8-measure samples.)
 
 All the following lead sheet is based on the higher-level language Form, Counterpoint (Figure6(a)) and the following Lead Sheet (Figure 7(a)):
+<section>
+    <midi-player src="/media/fig7_a.mid" sound-font visualizer="#Vis-fig7-a"> </midi-player>
+    <midi-visualizer src="/media/fig7_a.mid" type="piano-roll" id="Vis-fig7-a"> </midi-visualizer>
+</section>
+
 - (b)-(d): These samples are only conditioned on the content of the higher-level language Form and Counterpoint.
+<section id="fig7">
+    <midi-player src="/media/fig7_b.mid" sound-font visualizer="#Vis-fig7-0"> </midi-player>
+    <midi-player src="/media/fig7_c.mid" sound-font visualizer="#Vis-fig7-0"> </midi-player>
+    <midi-player src="/media/fig7_d.mid" sound-font visualizer="#Vis-fig7-0"> </midi-player>
+    <midi-visualizer type="piano-roll" id="Vis-fig7-0"> </midi-visualizer>
+</section>
+
 - (e): These samples are further conditioned on external control of texture latent representation. The representation fed to the model is the latent code of a sequence of Alberti bass texture, where left hand plays Eb quarter note and the right hand plays Alberti pattern in Eb chord.
+<section id="fig7">
+    <midi-player src="/media/fig7_e.mid" sound-font visualizer="#Vis-fig7-1"> </midi-player>
+    <midi-visualizer type="piano-roll" id="Vis-fig7-1"> </midi-visualizer>
+</section>
+
+## More Examples
+
+Here are we show more generation examples:
+
+- i4A4A4B8b4A4B8o4
+- A8B8A8B8B8
+- i4A4B4b8A4B4o4
+(Note: please truncate at 32 measures)
+
+(Below: Omitted for now)
 
 
 <script

@@ -60,6 +60,11 @@ midi-visualizer svg rect.note[data-instrument="1"] {
     /* stroke: #500; */
 }
 
+#fig7 midi-visualizer svg rect.note[data-instrument="0"] {
+    fill: #1c71d8;
+    /* stroke: #500; */
+}
+
 $l: #aaa;
 $t: transparent;
 $i: #efefef;

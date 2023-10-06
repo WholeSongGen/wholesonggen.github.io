@@ -60,7 +60,7 @@ midi-visualizer svg rect.note[data-instrument="1"] {
     /* stroke: #500; */
 }
 
-#fig7 midi-visualizer svg rect.note[data-instrument="0"] {
+#acc midi-visualizer svg rect.note[data-instrument="0"] {
     fill: #1c71d8;
     /* stroke: #500; */
 }
@@ -74,23 +74,26 @@ $b: #ebeffa;
 $o: #efefef;
 
 .legend {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    // height: 100vh;
+    margin-bottom: 20px;
 }
 
 .legend-item {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-  margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 .color-box {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-  border: 1px solid #000; /* Black border for better visibility */
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border: 1px solid #000; /* Black border for better visibility */
 }
 
 /* @mixin phrase($phs...) { */
@@ -123,6 +126,14 @@ midi-visualizer svg rect.note.active {
     stroke: #000;
 }
 
-#fig2 midi-visualizer .piano-roll-visualizer svg {
-    background: linear-gradient(90deg, $l 1px, $t 1px 20px, #aaaaaa55 21px, $t 21px 40px, #aaaaaa55 41px, $t 41px 60px, #aaaaaa55 61px, $t 61px) left/80px repeat, linear-gradient(90deg, $i 1px 319px, $l 319px 321px, $A 321px 639px, $l 639px 641px, $A 641px 959px, $l 959px 961px, $B 961px 1599px, $l 1599px 1601px, $b 1601px 1919px, $l 1919px 1921px, $A 1921px 2239px, $l 2239px 2241px, $A 2241px 2879px, $l 2879px 2881px, $o 2881px 3199px, $l 3199px 3201px);
+#type1 midi-visualizer .piano-roll-visualizer svg {
+    background: linear-gradient(90deg, #aaaaaa77 1px, $t 1px 20px, #aaaaaa55 21px, $t 21px 40px, #aaaaaa55 41px, $t 41px 60px, #aaaaaa55 61px, $t 61px) left/80px repeat, linear-gradient(90deg, $i 1px 319px, $l 319px 321px, $A 321px 639px, $l 639px 641px, $A 641px 959px, $l 959px 961px, $B 961px 1599px, $l 1599px 1601px, $b 1601px 1919px, $l 1919px 1921px, $A 1921px 2239px, $l 2239px 2241px, $B 2241px 2879px, $l 2879px 2881px, $o 2881px 3199px, $l 3199px 3201px);
+}
+
+#type2 midi-visualizer .piano-roll-visualizer svg {
+    background: linear-gradient(90deg, #aaaaaa77 1px, $t 1px 20px, #aaaaaa55 21px, $t 21px 40px, #aaaaaa55 41px, $t 41px 60px, #aaaaaa55 61px, $t 61px) left/80px repeat, linear-gradient(90deg, $A 1px 639px, $l 639px 641px, $B 641px 1279px, $l 1279px 1281px, $A 1281px 1919px, $l 1919px 1921px, $B 1921px 2559px, $l 2559px 2561px, $B 2561px 3199px, $l 3199px 3201px);
+}
+
+#type3 midi-visualizer .piano-roll-visualizer svg {
+    background: linear-gradient(90deg, #aaaaaa77 1px, $t 1px 20px, #aaaaaa55 21px, $t 21px 40px, #aaaaaa55 41px, $t 41px 60px, #aaaaaa55 61px, $t 61px) left/80px repeat, linear-gradient(90deg, $i 1px 319px, $l 319px 321px, $A 321px 639px, $l 639px 641px, $B 641px 959px, $l 959px 961px, $b 961px 1599px, $l 1599px 1601px, $A 1601px 1919px, $l 1919px 1921px, $B 1921px 2239px, $l 2239px 2241px, $o 2241px 2559px, $l 2559px 2561px);
 }

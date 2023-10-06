@@ -17,33 +17,34 @@ In the following, we first show the audible samples corresponding to the sheet m
 ### Figure 2: An example of whole song generation of 40 measures.
 
  <!-- Color Legend -->
-  <div class="legend">
-    <div class="legend-item">
-      <div class="color-box" style="background-color: #efefef;"></div>
-      <span>Intro/Outro</span>
-    </div>
-    <div class="legend-item">
-      <div class="color-box" style="background-color: #faf5eb;"></div>
-      <span>Phrase A</span>
-    </div>
-    <div class="legend-item">
-      <div class="color-box" style="background-color: #faedf7;"></div>
-      <span>Phrase B</span>
-    </div>
-    <div class="legend-item">
-      <div class="color-box" style="background-color: #ebeffa;"></div>
-      <span>Bridge</span>
-    </div>
-    <!-- Add more legend items as needed -->
+<div class="legend">
+  <div class="legend-item">
+    <div class="color-box" style="background-color: #efefef;"></div>
+    <span>Intro (<b>i</b>) / Outro (<b>o</b>)</span>
   </div>
+  <div class="legend-item">
+    <div class="color-box" style="background-color: #faf5eb;"></div>
+    <span>Phrase <b>A</b></span>
+  </div>
+  <div class="legend-item">
+    <div class="color-box" style="background-color: #faedf7;"></div>
+    <span>Phrase <b>B</b></span>
+  </div>
+  <div class="legend-item">
+    <div class="color-box" style="background-color: #ebeffa;"></div>
+    <span>Bridge (<b>b</b>)</span>
+  </div>
+</div>
+
+The given phrase configuration is **i**4**A**4**A**4**B**8**b**4**A**4**B**8**o**4, which stands for 4-measure intro, 4-measure phrase A, etc.
 
 - Generated Lead Sheet and Accompaniment.
-<section id="fig2">
+<section id="type1">
     <midi-player src="/media/fig2_melacc.mid" sound-font visualizer="#Vis-fig2-melacc"> </midi-player>
     <midi-visualizer src="/media/fig2_melacc.mid" type="piano-roll" id="Vis-fig2-melacc"> </midi-visualizer>
 </section>
 - Generated Counterpoint(Melody reduction and chord)
-<section id="fig2">
+<section id="type1">
     <midi-player src="/media/fig2_cp.mid" sound-font visualizer="#Vis-fig2-cp"> </midi-player>
     <midi-visualizer src="/media/fig2_cp.mid" type="piano-roll" id="Vis-fig2-cp"> </midi-visualizer>
 </section>
@@ -106,15 +107,15 @@ All the following lead sheet is based on the higher-level language Form, Counter
 </section>
 
 - (b)-(d): These samples are only conditioned on the content of the higher-level language Form and Counterpoint.
-<section id="fig7">
+<section id="acc">
     <midi-player src="/media/fig7_b.mid" sound-font visualizer="#Vis-fig7-0"> </midi-player>
     <midi-player src="/media/fig7_c.mid" sound-font visualizer="#Vis-fig7-0"> </midi-player>
     <midi-player src="/media/fig7_d.mid" sound-font visualizer="#Vis-fig7-0"> </midi-player>
     <midi-visualizer type="piano-roll" id="Vis-fig7-0"> </midi-visualizer>
 </section>
 
-- (e): These samples are further conditioned on external control of texture latent representation. The representation fed to the model is the latent code of a sequence of Alberti bass texture, where left hand plays Eb quarter note and the right hand plays Alberti pattern in Eb chord.
-<section id="fig7">
+- (e): This sample is further conditioned on external control of texture latent representation. The representation fed to the model is the latent code of a sequence of Alberti bass texture, where left hand plays Eb quarter note and the right hand plays Alberti pattern in Eb chord.
+<section id="acc">
     <midi-player src="/media/fig7_e.mid" sound-font visualizer="#Vis-fig7-1"> </midi-player>
     <midi-visualizer type="piano-roll" id="Vis-fig7-1"> </midi-visualizer>
 </section>
@@ -124,12 +125,47 @@ All the following lead sheet is based on the higher-level language Form, Counter
 
 Here are we show more generation examples:
 
-- i4A4A4B8b4A4B8o4
-- A8B8A8B8B8
-- i4A4B4b8A4B4o4
-(Note: please truncate at 32 measures)
+ <!-- Color Legend -->
+<div class="legend">
+  <div class="legend-item">
+    <div class="color-box" style="background-color: #efefef;"></div>
+    <span>Intro (<b>i</b>) / Outro (<b>o</b>)</span>
+  </div>
+  <div class="legend-item">
+    <div class="color-box" style="background-color: #faf5eb;"></div>
+    <span>Phrase <b>A</b></span>
+  </div>
+  <div class="legend-item">
+    <div class="color-box" style="background-color: #faedf7;"></div>
+    <span>Phrase <b>B</b></span>
+  </div>
+  <div class="legend-item">
+    <div class="color-box" style="background-color: #ebeffa;"></div>
+    <span>Bridge (<b>b</b>)</span>
+  </div>
+</div>
 
-(Below: Omitted for now)
+- **i**4**A**4**A**4**B**8**b**4**A**4**B**8**o**4
+<section id="type1">
+    <midi-player src="/media/more1_0.mid" sound-font visualizer="#Vis-more1"> </midi-player>
+    <midi-player src="/media/more1_1.mid" sound-font visualizer="#Vis-more1"> </midi-player>
+    <midi-visualizer type="piano-roll" id="Vis-more1"> </midi-visualizer>
+</section>
+
+- **A**8**B**8**A**8**B**8**B**8
+<section id="type2">
+    <midi-player src="/media/more2_0.mid" sound-font visualizer="#Vis-more2"> </midi-player>
+    <midi-player src="/media/more2_1.mid" sound-font visualizer="#Vis-more2"> </midi-player>
+    <midi-visualizer type="piano-roll" id="Vis-more2"> </midi-visualizer>
+</section>
+
+- **i**4**A**4**B**4**b**8**A**4**B**4**o**4
+<section id="type3">
+    <midi-player src="/media/more3_0.mid" sound-font visualizer="#Vis-more3"> </midi-player>
+    <midi-player src="/media/more3_1.mid" sound-font visualizer="#Vis-more3"> </midi-player>
+    <midi-visualizer type="piano-roll" id="Vis-more3"> </midi-visualizer>
+</section>
+
 
 
 <script

@@ -29,6 +29,6 @@ def colorize(figname, ph_anno):
 
 
 if __name__ == "__main__":
-    fig2 = colorize("fig2", "i4A4A4B8b4A4A8o4")
+    fig = colorize("type3", "i4A4B4b8A4B4o4")
     with open("./styles.scss", "a") as f:
-        f.write(fig2)
+        f.write(fig)

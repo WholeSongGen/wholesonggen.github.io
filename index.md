@@ -127,9 +127,9 @@ All the following lead sheet is based on the higher-level language Form, Counter
 </section>
 <br>
 
-## More Examples
+## More Examples of Whole-song Generation
 
-Here are we show more generation examples:
+Here are we show more whole-song generation examples:
 
  <!-- Color Legend -->
 <div class="legend">

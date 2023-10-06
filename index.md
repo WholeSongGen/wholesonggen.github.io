@@ -16,6 +16,27 @@ In the following, we first show the audible samples corresponding to the sheet m
 
 ### Figure 2: An example of whole song generation of 40 measures.
 
+ <!-- Color Legend -->
+  <div class="legend">
+    <div class="legend-item">
+      <div class="color-box" style="background-color: #efefef;"></div>
+      <span>Intro/Outro</span>
+    </div>
+    <div class="legend-item">
+      <div class="color-box" style="background-color: #faf5eb;"></div>
+      <span>Phrase A</span>
+    </div>
+    <div class="legend-item">
+      <div class="color-box" style="background-color: #faedf7;"></div>
+      <span>Phrase B</span>
+    </div>
+    <div class="legend-item">
+      <div class="color-box" style="background-color: #ebeffa;"></div>
+      <span>Bridge</span>
+    </div>
+    <!-- Add more legend items as needed -->
+  </div>
+
 - Generated Lead Sheet and Accompaniment.
 <section id="fig2">
     <midi-player src="/media/fig2_melacc.mid" sound-font visualizer="#Vis-fig2-melacc"> </midi-player>
@@ -97,6 +118,7 @@ All the following lead sheet is based on the higher-level language Form, Counter
     <midi-player src="/media/fig7_e.mid" sound-font visualizer="#Vis-fig7-1"> </midi-player>
     <midi-visualizer type="piano-roll" id="Vis-fig7-1"> </midi-visualizer>
 </section>
+<br>
 
 ## More Examples
 

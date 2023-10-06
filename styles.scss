@@ -73,6 +73,26 @@ $B: #faedf7;
 $b: #ebeffa;
 $o: #efefef;
 
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border: 1px solid #000; /* Black border for better visibility */
+}
+
 /* @mixin phrase($phs...) { */
 /*     $cur: 0; */
 /*     @for $k from 0 to math.div(length($phs), 2) { */

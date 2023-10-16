@@ -8,9 +8,24 @@ layout: home
 <!-- <hr color="#E8E8E8"> -->
 <!-- <br> -->
 
-This is the demo page of the paper under review: <i>Whole-song Hierarchical Generation of Symbolic Music Using Cascaded Diffusion Models</i>.
+This is the demo page of the paper under review: <i>Whole-song Hierarchical Generation of Symbolic Music Using Cascaded Diffusion Models</i>. In the following, we first show the audible samples corresponding to the sheet music in the submitted paper. Then we show more examples of whole-song music generation.
 
-In the following, we first show the audible samples corresponding to the sheet music in the submitted paper. Then we show more examples of whole-song music generation.
+<div class="dotted-box" id="def">
+<div class="center-stuff">
+4 levels of hierarchical musical languages are involved in the demos:
+</div>
+<div class="center-stuff">
+<ul>
+    <li><i>Form</i>: key changes and phrase division.</li>
+    <li><i>Counterpoint</i>: melody reduction and simplified chord.</li>
+    <li><i>Lead Sheet</i>: lead melody and chord.</li>
+    <li><i>Accompaniment</i>: accompaniment (literally).</li>
+</ul>
+</div>
+</div>
+
+<br>
+In the piano-roll visualization, <font color="#e03c34">red</font> notes indicate lead melody, and <font color="#2B7ADB">blue</font> notes indicate either chord (in *Lead Sheet*), simplied chord (in *Counterpoint*), or accompaniment (*Accompaniment*) according to the given context. 
 
 ## Audible Samples of the Sheet Music in the Submission
 
@@ -38,22 +53,22 @@ In the following, we first show the audible samples corresponding to the sheet m
 
 The given phrase configuration is **i**4**A**4**A**4**B**8**b**4**A**4**B**8**o**4, which stands for 4-measure intro, 4-measure phrase A, etc.
 
-- Generated Lead Sheet and Accompaniment.
+- Generated full song (lead melody and accompaniment).
 <section id="type1">
     <midi-player src="/media/fig2_melacc.mid" sound-font visualizer="#Vis-fig2-melacc"> </midi-player>
     <midi-visualizer src="/media/fig2_melacc.mid" type="piano-roll" id="Vis-fig2-melacc"> </midi-visualizer>
     <br>
 </section>
-- Generated Counterpoint(Melody reduction and chord)
+- Generated corresponding *Counterpoint*.
 <section id="type1">
     <midi-player src="/media/fig2_cp.mid" sound-font visualizer="#Vis-fig2-cp"> </midi-player>
     <midi-visualizer src="/media/fig2_cp.mid" type="piano-roll" id="Vis-fig2-cp"> </midi-visualizer>
 </section>
 <br>
 
-### **Figure 5:** Examples of generated Counterpoint of "A8" phrases in Eb major.
+### **Figure 5:** Examples of generated *Counterpoint* of "A8" phrases in Eb major.
 
-- (a)-(f): These samples are only conditioned on the content of the higher-level language Form.
+- (a)-(f): These samples are only conditioned on the content of the <a href="#def">higher-level language</a> *Form*.
 <section id="fig5">
     <midi-player src="/media/fig5_a.mid" sound-font visualizer="#Vis-fig5-0"> </midi-player>
     <midi-player src="/media/fig5_b.mid" sound-font visualizer="#Vis-fig5-0"> </midi-player>
@@ -73,16 +88,16 @@ The given phrase configuration is **i**4**A**4**A**4**B**8**b**4**A**4**B**8**o*
 </section>
 <br>
 
-### **Figure 6:** Examples of generated Lead Sheet of "A8" phrases in Eb major.
+### **Figure 6:** Examples of generated *Lead Sheet* of "A8" phrases in Eb major.
 
-All the following lead sheet is based on the higher-level language Form and the following Counterpoint (**Figure 6(a)**):
+All the following samples are based on the <a href="#def">higher-level language</a> *Form* and the following *Counterpoint* (**Figure 6(a)**):
 <section id="fig6">
     <midi-player src="/media/fig6_a.mid" sound-font visualizer="#Vis-fig6-a"> </midi-player>
     <midi-visualizer src="/media/fig6_a.mid" type="piano-roll" id="Vis-fig6-a"> </midi-visualizer>
     <br>
 </section>
 
-- (b)-(g): These samples are only conditioned on the content of the higher-level language Form and Counterpoint.
+- (b)-(g): These samples are only conditioned on the content of the <a href="#def">higher-level language</a> *Form* and *Counterpoint*.
 <section id="fig6">
     <midi-player src="/media/fig6_b.mid" sound-font visualizer="#Vis-fig6-0"> </midi-player>
     <midi-player src="/media/fig6_c.mid" sound-font visualizer="#Vis-fig6-0"> </midi-player>
@@ -102,16 +117,16 @@ All the following lead sheet is based on the higher-level language Form and the 
 </section>
 <br>
 
-### **Figure 7:** Examples of generated Accompaniment of "A8" phrases in Eb major.
+### **Figure 7:** Examples of generated *Accompaniment* of "A8" phrases in Eb major.
 
-All the following lead sheet is based on the higher-level language Form, Counterpoint (**Figure 6(a)**) and the following Lead Sheet (**Figure 7(a)**):
+All the following samples are based on the <a href="#def">higher-level language</a> *Form*, *Counterpoint* (**Figure 6(a)**) and the following *Lead Sheet* (**Figure 7(a)**):
 <section>
     <midi-player src="/media/fig7_a.mid" sound-font visualizer="#Vis-fig7-a"> </midi-player>
     <midi-visualizer src="/media/fig7_a.mid" type="piano-roll" id="Vis-fig7-a"> </midi-visualizer>
     <br>
 </section>
 
-- (b)-(d): These samples are only conditioned on the content of the higher-level language Form and Counterpoint.
+- (b)-(d): These samples are only conditioned on the content of the <a href="#def">higher-level language</a> *Form* and *Counterpoint*.
 <section id="acc">
     <midi-player src="/media/fig7_b.mid" sound-font visualizer="#Vis-fig7-0"> </midi-player>
     <midi-player src="/media/fig7_c.mid" sound-font visualizer="#Vis-fig7-0"> </midi-player>
@@ -129,7 +144,7 @@ All the following lead sheet is based on the higher-level language Form, Counter
 
 ## More Examples of Whole-song Generation
 
-Here are we show more whole-song generation examples:
+Here are we show more whole-song generation examples (lead melody and accompaniment):
 
  <!-- Color Legend -->
 <div class="legend">

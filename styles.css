@@ -1,3 +1,15 @@
+.dotted-box {
+  border: 2px dotted #888; /* Set the border style to dotted and color to black */
+  border-radius: 20px; /* Set border radius for rounded corners */
+  padding: 10px; /* Add some padding to the content inside the box */
+}
+
+.center-stuff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 midi-player {
   display: block;
   width: inherit;
@@ -63,6 +75,9 @@ midi-visualizer svg rect.note[data-instrument="1"] {
 }
 
 .legend {
+  border: 2px dotted #888; /* Set the border style to dotted and color to black */
+  border-radius: 20px; /* Set border radius for rounded corners */
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

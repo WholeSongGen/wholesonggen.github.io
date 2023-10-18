@@ -25,7 +25,7 @@ This is the demo page of the paper under review: <i>Whole-song Hierarchical Gene
 </div>
 
 <br>
-In the piano-roll visualization, <font color="#e03c34">red</font> notes indicate lead melody, and <font color="#2B7ADB">blue</font> notes indicate either chord (in *Lead Sheet*), simplied chord (in *Counterpoint*), or accompaniment (*Accompaniment*) according to the given context. 
+In the piano-roll visualization, <font color="#e03c34">red</font> notes indicate lead melody, and <font color="#2B7ADB">blue</font> notes indicate either chord (in *Lead Sheet*), simplified chord (in *Counterpoint*), or accompaniment (*Accompaniment*) according to the given context. 
 
 ## Audible Samples of the Sheet Music in the Submission
 

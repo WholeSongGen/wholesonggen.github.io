@@ -69,11 +69,6 @@ midi-visualizer svg rect.note[data-instrument="1"] {
   /* stroke: #500; */
 }
 
-#acc midi-visualizer svg rect.note[data-instrument="0"] {
-  fill: #1c71d8;
-  /* stroke: #500; */
-}
-
 .legend {
   border: 2px dotted #888; /* Set the border style to dotted and color to black */
   border-radius: 20px; /* Set border radius for rounded corners */

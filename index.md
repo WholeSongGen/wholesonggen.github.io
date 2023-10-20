@@ -127,7 +127,7 @@ All the following samples are based on the <a href="#def">higher-level language<
 </section>
 
 - (b)-(d): These samples are only conditioned on the content of the <a href="#def">higher-level language</a> *Form* and *Counterpoint*.
-<section id="acc">
+<section id="fig7">
     <midi-player src="/media/fig7_b.mid" sound-font visualizer="#Vis-fig7-0"> </midi-player>
     <midi-player src="/media/fig7_c.mid" sound-font visualizer="#Vis-fig7-0"> </midi-player>
     <midi-player src="/media/fig7_d.mid" sound-font visualizer="#Vis-fig7-0"> </midi-player>
@@ -136,7 +136,7 @@ All the following samples are based on the <a href="#def">higher-level language<
 </section>
 
 - (e): This sample is further conditioned on external control of texture latent representation. The representation fed to the model is the latent code of a sequence of Alberti bass texture, where left hand plays Eb quarter note and the right hand plays Alberti pattern in Eb chord.
-<section id="acc">
+<section id="fig7">
     <midi-player src="/media/fig7_e.mid" sound-font visualizer="#Vis-fig7-1"> </midi-player>
     <midi-visualizer type="piano-roll" id="Vis-fig7-1"> </midi-visualizer>
 </section>

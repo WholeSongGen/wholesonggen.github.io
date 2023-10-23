@@ -10,20 +10,20 @@
   align-items: center;
 }
 
-midi-player {
+.vis midi-player {
   display: block;
   width: inherit;
   margin: 4px;
   margin-bottom: 0;
 }
 
-midi-player::part(control-panel) {
+.vis midi-player::part(control-panel) {
   /* background: #252a34; */
   border: 2px solid #000;
   border-radius: 10px 10px 0 0;
 }
 
-midi-player::part(play-button) {
+.vis midi-player::part(play-button) {
   color: #222;
   border: 2px solid currentColor;
   background-color: #ddd;
@@ -32,7 +32,7 @@ midi-player::part(play-button) {
   content: "hello";
 }
 
-midi-player::part(play-button):hover {
+.vis midi-player::part(play-button):hover {
   color: #000;
   background-color: #fff;
   border-radius: 10px;
@@ -43,7 +43,7 @@ midi-player::part(time) {
 }
 
 /* Custom visualizer style */
-midi-visualizer .piano-roll-visualizer {
+.vis midi-visualizer .piano-roll-visualizer {
   /* background: #252a34; */
   border: 2px solid black;
   border-top: none;
@@ -60,15 +60,15 @@ midi-visualizer svg rect.note {
 
 midi-visualizer svg rect.note[data-instrument="0"] {
   fill: #e03c34;
-  /* stroke: #500; */
 }
 
 midi-visualizer svg rect.note[data-instrument="1"] {
-  /* fill: #444; */
   fill: #1c71d8;
-  /* stroke: #500; */
 }
 
+/* .melody midi-visualizer svg rect.note[data-instrument="1"] { */
+/*     fill: #1c71d8; */
+/* } */
 .legend {
   border: 2px dotted #888; /* Set the border style to dotted and color to black */
   border-radius: 20px; /* Set border radius for rounded corners */
@@ -121,15 +121,15 @@ midi-visualizer svg rect.note.active {
   stroke: #000;
 }
 
-#type1 midi-visualizer .piano-roll-visualizer svg {
+.type1 midi-visualizer .piano-roll-visualizer svg {
   background: linear-gradient(90deg, rgba(170, 170, 170, 0.4666666667) 1px, transparent 1px 20px, rgba(170, 170, 170, 0.3333333333) 21px, transparent 21px 40px, rgba(170, 170, 170, 0.3333333333) 41px, transparent 41px 60px, rgba(170, 170, 170, 0.3333333333) 61px, transparent 61px) left/80px repeat, linear-gradient(90deg, #efefef 1px 319px, #aaa 319px 321px, #faf5eb 321px 639px, #aaa 639px 641px, #faf5eb 641px 959px, #aaa 959px 961px, #faedf7 961px 1599px, #aaa 1599px 1601px, #ebeffa 1601px 1919px, #aaa 1919px 1921px, #faf5eb 1921px 2239px, #aaa 2239px 2241px, #faedf7 2241px 2879px, #aaa 2879px 2881px, #efefef 2881px 3199px, #aaa 3199px 3201px);
 }
 
-#type2 midi-visualizer .piano-roll-visualizer svg {
+.type2 midi-visualizer .piano-roll-visualizer svg {
   background: linear-gradient(90deg, rgba(170, 170, 170, 0.4666666667) 1px, transparent 1px 20px, rgba(170, 170, 170, 0.3333333333) 21px, transparent 21px 40px, rgba(170, 170, 170, 0.3333333333) 41px, transparent 41px 60px, rgba(170, 170, 170, 0.3333333333) 61px, transparent 61px) left/80px repeat, linear-gradient(90deg, #faf5eb 1px 639px, #aaa 639px 641px, #faedf7 641px 1279px, #aaa 1279px 1281px, #faf5eb 1281px 1919px, #aaa 1919px 1921px, #faedf7 1921px 2559px, #aaa 2559px 2561px, #faedf7 2561px 3199px, #aaa 3199px 3201px);
 }
 
-#type3 midi-visualizer .piano-roll-visualizer svg {
+.type3 midi-visualizer .piano-roll-visualizer svg {
   background: linear-gradient(90deg, rgba(170, 170, 170, 0.4666666667) 1px, transparent 1px 20px, rgba(170, 170, 170, 0.3333333333) 21px, transparent 21px 40px, rgba(170, 170, 170, 0.3333333333) 41px, transparent 41px 60px, rgba(170, 170, 170, 0.3333333333) 61px, transparent 61px) left/80px repeat, linear-gradient(90deg, #efefef 1px 319px, #aaa 319px 321px, #faf5eb 321px 639px, #aaa 639px 641px, #faedf7 641px 959px, #aaa 959px 961px, #ebeffa 961px 1599px, #aaa 1599px 1601px, #faf5eb 1601px 1919px, #aaa 1919px 1921px, #faedf7 1921px 2239px, #aaa 2239px 2241px, #efefef 2241px 2559px, #aaa 2559px 2561px);
 }
 

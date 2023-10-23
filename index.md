@@ -5,8 +5,6 @@ layout: home
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<!-- <hr color="#E8E8E8"> -->
-<!-- <br> -->
 
 This is the demo page of the paper under review: <i>Whole-song Hierarchical Generation of Symbolic Music Using Cascaded Diffusion Models</i>. In the following, we first show the audible samples corresponding to the sheet music in the submitted paper. Then we show more examples of whole-song music generation.
 
@@ -27,7 +25,10 @@ This is the demo page of the paper under review: <i>Whole-song Hierarchical Gene
 <br>
 In the piano-roll visualization, <font color="#e03c34">red</font> notes indicate lead melody, and <font color="#2B7ADB">blue</font> notes indicate either chord (in *Lead Sheet*), simplified chord (in *Counterpoint*), or accompaniment (*Accompaniment*) according to the given context. 
 
-## Audible Samples of the Sheet Music in the Submission
+<!-- <hr color="#E8E8E8"> -->
+<br>
+
+# Audible Samples of the Sheet Music in the Submission
 
 ### **Figure 2:** An example of whole song generation of 40 measures.
 
@@ -54,13 +55,13 @@ In the piano-roll visualization, <font color="#e03c34">red</font> notes indicate
 The given phrase configuration is **i**4**A**4**A**4**B**8**b**4**A**4**B**8**o**4, which stands for 4-measure intro, 4-measure phrase A, etc.
 
 - Generated full song (lead melody and accompaniment).
-<section id="type1">
+<section class="vis type1">
     <midi-player src="/media/fig2_melacc.mid" sound-font visualizer="#Vis-fig2-melacc"> </midi-player>
     <midi-visualizer src="/media/fig2_melacc.mid" type="piano-roll" id="Vis-fig2-melacc"> </midi-visualizer>
     <br>
 </section>
 - Generated corresponding *Counterpoint*.
-<section id="type1">
+<section class="vis type1">
     <midi-player src="/media/fig2_cp.mid" sound-font visualizer="#Vis-fig2-cp"> </midi-player>
     <midi-visualizer src="/media/fig2_cp.mid" type="piano-roll" id="Vis-fig2-cp"> </midi-visualizer>
 </section>
@@ -69,20 +70,28 @@ The given phrase configuration is **i**4**A**4**A**4**B**8**b**4**A**4**B**8**o*
 ### **Figure 5:** Examples of generated *Counterpoint* of "A8" phrases in Eb major.
 
 - (a)-(f): These samples are only conditioned on the content of the <a href="#def">higher-level language</a> *Form*.
-<section id="fig5">
+<section>
+    <!-- <img src="img/fig5_a.png"> -->
     <midi-player src="/media/fig5_a.mid" sound-font visualizer="#Vis-fig5-0"> </midi-player>
+    <!-- <img src="img/fig5_b.png"> -->
     <midi-player src="/media/fig5_b.mid" sound-font visualizer="#Vis-fig5-0"> </midi-player>
+    <!-- <img src="img/fig5_c.png"> -->
     <midi-player src="/media/fig5_c.mid" sound-font visualizer="#Vis-fig5-0"> </midi-player>
+    <!-- <img src="img/fig5_d.png"> -->
     <midi-player src="/media/fig5_d.mid" sound-font visualizer="#Vis-fig5-0"> </midi-player>
+    <!-- <img src="img/fig5_e.png"> -->
     <midi-player src="/media/fig5_e.mid" sound-font visualizer="#Vis-fig5-0"> </midi-player>
+    <!-- <img src="img/fig5_f.png"> -->
     <midi-player src="/media/fig5_f.mid" sound-font visualizer="#Vis-fig5-0"> </midi-player>
     <midi-visualizer type="piano-roll" id="Vis-fig5-0"> </midi-visualizer>
     <br>
 </section>
 
 - (g)-(h): These samples are further conditioned on external control of chord progression latent representation. The representation fed to the model is the latent code of a sequence of Eb major chords.
-<section id="fig5">
+<section>
+    <!-- <img src="img/fig5_g.png"> -->
     <midi-player src="/media/fig5_g.mid" sound-font visualizer="#Vis-fig5-1"> </midi-player>
+    <!-- <img src="img/fig5_h.png"> -->
     <midi-player src="/media/fig5_h.mid" sound-font visualizer="#Vis-fig5-1"> </midi-player>
     <midi-visualizer type="piano-roll" id="Vis-fig5-1"> </midi-visualizer>
 </section>
@@ -91,9 +100,10 @@ The given phrase configuration is **i**4**A**4**A**4**B**8**b**4**A**4**B**8**o*
 ### **Figure 6:** Examples of generated *Lead Sheet* of "A8" phrases in Eb major.
 
 All the following samples are based on the <a href="#def">higher-level language</a> *Form* and the following *Counterpoint* (**Figure 6(a)**):
-<section id="fig6">
+<section>
+    <img src="img/fig6_a.png">
     <midi-player src="/media/fig6_a.mid" sound-font visualizer="#Vis-fig6-a"> </midi-player>
-    <midi-visualizer src="/media/fig6_a.mid" type="piano-roll" id="Vis-fig6-a"> </midi-visualizer>
+    <midi-visualizer type="piano-roll" id="Vis-fig6-a"> </midi-visualizer>
     <br>
 </section>
 
@@ -121,8 +131,9 @@ All the following samples are based on the <a href="#def">higher-level language<
 
 All the following samples are based on the <a href="#def">higher-level language</a> *Form*, *Counterpoint* (**Figure 6(a)**) and the following *Lead Sheet* (**Figure 7(a)**):
 <section>
+    <img src="img/fig7_a.png">
     <midi-player src="/media/fig7_a.mid" sound-font visualizer="#Vis-fig7-a"> </midi-player>
-    <midi-visualizer src="/media/fig7_a.mid" type="piano-roll" id="Vis-fig7-a"> </midi-visualizer>
+    <midi-visualizer type="piano-roll" id="Vis-fig7-a"> </midi-visualizer>
     <br>
 </section>
 
@@ -142,7 +153,7 @@ All the following samples are based on the <a href="#def">higher-level language<
 </section>
 <br>
 
-## More Examples of Whole-song Generation
+# More Examples of Whole-song Generation
 
 Here are we show more whole-song generation examples (lead melody and accompaniment):
 
@@ -167,26 +178,29 @@ Here are we show more whole-song generation examples (lead melody and accompanim
 </div>
 
 - **i**4**A**4**A**4**B**8**b**4**A**4**B**8**o**4
-<section id="type1">
-    <midi-player src="/media/more1_0.mid" sound-font visualizer="#Vis-more1"> </midi-player>
-    <midi-player src="/media/more1_1.mid" sound-font visualizer="#Vis-more1"> </midi-player>
-    <midi-visualizer type="piano-roll" id="Vis-more1"> </midi-visualizer>
+<section class="vis type1">
+    <midi-player src="/media/more1_0.mid" sound-font visualizer="#Vis-more1_0"> </midi-player>
+    <midi-visualizer src="/media/more1_0.mid" type="piano-roll" id="Vis-more1_0"> </midi-visualizer>
+    <midi-player src="/media/more1_1.mid" sound-font visualizer="#Vis-more1_1"> </midi-player>
+    <midi-visualizer src="/media/more1_1.mid" type="piano-roll" id="Vis-more1_1"> </midi-visualizer>
     <br>
 </section>
 
 - **A**8**B**8**A**8**B**8**B**8
-<section id="type2">
-    <midi-player src="/media/more2_0.mid" sound-font visualizer="#Vis-more2"> </midi-player>
-    <midi-player src="/media/more2_1.mid" sound-font visualizer="#Vis-more2"> </midi-player>
-    <midi-visualizer type="piano-roll" id="Vis-more2"> </midi-visualizer>
+<section class="vis type2">
+    <midi-player src="/media/more2_0.mid" sound-font visualizer="#Vis-more2_0"> </midi-player>
+    <midi-visualizer src="/media/more2_0.mid" type="piano-roll" id="Vis-more2_0"> </midi-visualizer>
+    <midi-player src="/media/more2_1.mid" sound-font visualizer="#Vis-more2_1"> </midi-player>
+    <midi-visualizer src="/media/more2_1.mid" type="piano-roll" id="Vis-more2_1"> </midi-visualizer>
     <br>
 </section>
 
 - **i**4**A**4**B**4**b**8**A**4**B**4**o**4
-<section id="type3">
-    <midi-player src="/media/more3_0.mid" sound-font visualizer="#Vis-more3"> </midi-player>
-    <midi-player src="/media/more3_1.mid" sound-font visualizer="#Vis-more3"> </midi-player>
-    <midi-visualizer type="piano-roll" id="Vis-more3"> </midi-visualizer>
+<section class="vis type3">
+    <midi-player src="/media/more3_0.mid" sound-font visualizer="#Vis-more3_0"> </midi-player>
+    <midi-visualizer src="/media/more3_0.mid" type="piano-roll" id="Vis-more3_0"> </midi-visualizer>
+    <midi-player src="/media/more3_1.mid" sound-font visualizer="#Vis-more3_1"> </midi-player>
+    <midi-visualizer src="/media/more3_1.mid" type="piano-roll" id="Vis-more3_1"> </midi-visualizer>
 </section>
 <br>
 

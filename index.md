@@ -103,7 +103,7 @@ All the following samples are based on the <a href="#def">higher-level language<
 <section>
     <!-- <img src="img/fig6_a.png"> -->
     <midi-player src="/media/fig6_a.mid" sound-font visualizer="#Vis-fig6-a"> </midi-player>
-    <midi-visualizer type="piano-roll" id="Vis-fig6-a"> </midi-visualizer>
+    <midi-visualizer src="/media/fig6_a.mid" type="piano-roll" id="Vis-fig6-a"> </midi-visualizer>
     <br>
 </section>
 
@@ -133,7 +133,7 @@ All the following samples are based on the <a href="#def">higher-level language<
 <section>
     <!-- <img src="img/fig7_a.png"> -->
     <midi-player src="/media/fig7_a.mid" sound-font visualizer="#Vis-fig7-a"> </midi-player>
-    <midi-visualizer type="piano-roll" id="Vis-fig7-a"> </midi-visualizer>
+    <midi-visualizer src="/media/fig7_a.mid" type="piano-roll" id="Vis-fig7-a"> </midi-visualizer>
     <br>
 </section>
 

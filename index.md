@@ -101,14 +101,14 @@ The given phrase configuration is **i**4**A**4**A**4**B**8**b**4**A**4**B**8**o*
 
 All the following samples are based on the <a href="#def">higher-level language</a> *Form* and the following *Counterpoint* (**Figure 6(a)**):
 <section>
-    <img src="img/fig6_a.png">
+    <!-- <img src="img/fig6_a.png"> -->
     <midi-player src="/media/fig6_a.mid" sound-font visualizer="#Vis-fig6-a"> </midi-player>
     <midi-visualizer type="piano-roll" id="Vis-fig6-a"> </midi-visualizer>
     <br>
 </section>
 
 - (b)-(g): These samples are only conditioned on the content of the <a href="#def">higher-level language</a> *Form* and *Counterpoint*.
-<section id="fig6">
+<section>
     <midi-player src="/media/fig6_b.mid" sound-font visualizer="#Vis-fig6-0"> </midi-player>
     <midi-player src="/media/fig6_c.mid" sound-font visualizer="#Vis-fig6-0"> </midi-player>
     <midi-player src="/media/fig6_d.mid" sound-font visualizer="#Vis-fig6-0"> </midi-player>
@@ -120,7 +120,7 @@ All the following samples are based on the <a href="#def">higher-level language<
 </section>
 
 - (h)-(i): These samples are further conditioned on external control of rhythm latent representation. The representation fed to the model is the latent code of a sequence of all16-th notes.
-<section id="fig6">
+<section>
     <midi-player src="/media/fig6_h.mid" sound-font visualizer="#Vis-fig6-1"> </midi-player>
     <midi-player src="/media/fig6_i.mid" sound-font visualizer="#Vis-fig6-1"> </midi-player>
     <midi-visualizer type="piano-roll" id="Vis-fig6-1"> </midi-visualizer>
@@ -131,14 +131,14 @@ All the following samples are based on the <a href="#def">higher-level language<
 
 All the following samples are based on the <a href="#def">higher-level language</a> *Form*, *Counterpoint* (**Figure 6(a)**) and the following *Lead Sheet* (**Figure 7(a)**):
 <section>
-    <img src="img/fig7_a.png">
+    <!-- <img src="img/fig7_a.png"> -->
     <midi-player src="/media/fig7_a.mid" sound-font visualizer="#Vis-fig7-a"> </midi-player>
     <midi-visualizer type="piano-roll" id="Vis-fig7-a"> </midi-visualizer>
     <br>
 </section>
 
 - (b)-(d): These samples are only conditioned on the content of the <a href="#def">higher-level language</a> *Form* and *Counterpoint*.
-<section id="fig7">
+<section>
     <midi-player src="/media/fig7_b.mid" sound-font visualizer="#Vis-fig7-0"> </midi-player>
     <midi-player src="/media/fig7_c.mid" sound-font visualizer="#Vis-fig7-0"> </midi-player>
     <midi-player src="/media/fig7_d.mid" sound-font visualizer="#Vis-fig7-0"> </midi-player>
@@ -147,7 +147,7 @@ All the following samples are based on the <a href="#def">higher-level language<
 </section>
 
 - (e): This sample is further conditioned on external control of texture latent representation. The representation fed to the model is the latent code of a sequence of Alberti bass texture, where left hand plays Eb quarter note and the right hand plays Alberti pattern in Eb chord.
-<section id="fig7">
+<section>
     <midi-player src="/media/fig7_e.mid" sound-font visualizer="#Vis-fig7-1"> </midi-player>
     <midi-visualizer type="piano-roll" id="Vis-fig7-1"> </midi-visualizer>
 </section>

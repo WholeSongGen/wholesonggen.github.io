@@ -8,6 +8,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+.btn {
+  background-color: #cde;
+  color: black;
+  padding: 8px;
+  margin: 10px;
+  font-size: 16px;
+  /* border: 2px solid black; */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #def;
 }
 
 .vis midi-player {
@@ -53,6 +71,14 @@ midi-player::part(time) {
   overflow: auto;
 }
 
+.alone midi-visualizer .piano-roll-visualizer {
+  /* background: #252a34; */
+  border: 2px solid black;
+  border-radius: 10px 10px 10px 10px;
+  margin: 5px;
+  overflow: auto;
+}
+
 midi-visualizer svg rect.note {
   opacity: 0.6;
   stroke-width: 2;
@@ -66,13 +92,15 @@ midi-visualizer svg rect.note[data-instrument="1"] {
   fill: #1c71d8;
 }
 
-/* .melody midi-visualizer svg rect.note[data-instrument="1"] { */
-/*     fill: #1c71d8; */
-/* } */
+.acc midi-visualizer svg rect.note[data-instrument="0"] {
+  fill: #1c71d8;
+}
+
 .legend {
   border: 2px dotted #888; /* Set the border style to dotted and color to black */
   border-radius: 20px; /* Set border radius for rounded corners */
-  padding: 10px;
+  padding-bottom: 0px;
+  padding-top: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

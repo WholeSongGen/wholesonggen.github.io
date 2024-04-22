@@ -5,6 +5,7 @@ layout: home
     <link rel="stylesheet" href="styles.css">
 </head>
 
+\| [Paper](https://openreview.net/forum?id=sn7CYWyavh&noteId=3X6BSBDIPB) \| [Code Repo](https://github.com/ZZWaang/whole-song-gen) \|
 
 This is the demo page of the paper under review: *Whole-song Hierarchical Generation of Symbolic Music Using Cascaded Diffusion Models*. We make the first attempt to model full pop songs (melody and piano accompaniment) under the realization of **compositional hierarchy**. 
 

@@ -9,7 +9,7 @@ layout: home
 <p style="text-align: center;">
     Ziyu Wang, Lejun Min, Gus Xia @<a href="http://www.musicxlab.com/">MusicXLab</a>
     <br>
-    <a href="https://openreview.net/forum?id=sn7CYWyavh">[Paper]</a> | <a href="https://github.com/ZZWaang/whole-song-gen">[Code Repo]</a>
+    <a href="https://arxiv.org/abs/2405.09901">[Paper]</a> <a href="https://openreview.net/forum?id=sn7CYWyavh">[OpenReview]</a> <a href="https://github.com/ZZWaang/whole-song-gen">[Code Repo]</a>
 </p>
 
 This is the demo page of the paper: _Whole-song Hierarchical Generation of Symbolic Music Using Cascaded Diffusion Models_. We make the first attempt to model full pop songs (melody and piano accompaniment) under the realization of **compositional hierarchy**.
